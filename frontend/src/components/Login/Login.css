@@ -1,0 +1,86 @@
+.login-popup {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.56); /* Improved the background color for better readability */
+    display: grid;
+    place-items: center; /* Centers the container vertically and horizontally */
+}
+
+.login-popup-container {
+    width: max(23vw, 330px);
+    color: #808080;
+    background-color: white; 
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px 30px;
+    border-radius: 8px;
+    font-size: 14px;
+    animation: fadeIn 0.5s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow for better visibility */
+}
+
+.login-popup-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+
+.login-popup-title img {
+    width: 16px;
+    cursor: pointer;
+}
+
+.login-popup-input {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login-popup-input input {
+    outline: none;
+    border: 1px solid #c9c9c9;
+    padding: 12px; /* Adjusted padding for better input field appearance */
+    border-radius: 4px;
+    font-size: 14px; /* Added font size for consistency */
+} 
+
+.login-popup-container button {
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    color: white;
+    background-color: tomato;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.login-popup-container button:hover {
+    background-color: darkred; /* Hover effect for better user experience */
+}
+
+.login-popup-condition {
+    display: flex;
+    align-items: center;
+    font-size: 12px; /* Adjusted font size for better readability */
+    color: #505050;
+    margin-top: -15px; /* Adjusted margin for better spacing */
+}
+
+.login-popup-condition input {
+    margin-right: 10px; /* Added margin for checkbox */
+}
+
+.login-popup span {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.login-popup span:hover {
+    color: darkblue; /* Hover effect for interactive elements */
+}
