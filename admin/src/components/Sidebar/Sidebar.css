@@ -1,0 +1,45 @@
+.sidebar {
+    width: 18%;
+    min-height: 100vh;
+    border: 1.5px solid #a9a9a9;
+    border-top: 0;
+    font-size: max(1vw, 10px);
+}
+
+.sidebar-options {
+    padding-top: 50px;
+    padding-left: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Style each sidebar option (NavLink) */
+.sidebar-option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid #a9a9a9;
+    border-right: 0;
+    padding: 8px 10px;
+    border-radius: 3px 0px 0px 3px;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color */
+    transition: background-color 0.3s ease;
+}
+
+/* Add hover effect */
+.sidebar-option:hover {
+    background-color: #f0f0f0;
+}
+.sidebar-option.active{
+    background-color: #fff0ed;
+    border-color: tomato;
+}
+/* For smaller screens, hide the text */
+@media (max-width: 900px) {
+    .sidebar-option p {
+        display: none;
+    }
+}
