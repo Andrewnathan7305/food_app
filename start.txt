@@ -1,2 +1,7 @@
 1) In package.json change the scripts  "server":"nodemon server.js"
 2) In package.json add "type":"module"
+
+
+
+mongodb+srv://andrewnathan0704:andrewnathan0704@cluster0.t1zij.mongodb.net/?
+retryWrites=true&w=majority&appName=Cluster0
